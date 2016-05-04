@@ -1,0 +1,29 @@
+{% extends "hello.html" %}
+
+
+{% block header %}
+            <h1>Dragi Smart Ninja!</h1>
+            <p>Poglejmo, kako ti je šlo! </p>
+           
+{% endblock header %}
+
+{% block odgovor_slo %} Ljubljana {% endblock odgovor_slo %}   
+
+{% block odgovor_it %} Rim {% endblock odgovor_it %}
+
+{% block odgovor_at %} Dunaj {% endblock odgovor_at %}
+
+{% block odgovor_fr %} Pariz {% endblock odgovor_fr %}
+
+{% block odgovor_sr %} Beograd {% endblock odgovor_sr %}
+
+{% block odgovor_sp %} Madrid {% endblock odgovor_sp %}
+
+
+{% block dajrezultat %}
+    
+ <p>Zbral si naslednje število točk: {{stevec}} </p>
+
+<button type="submit"><a href="/">Nazaj</a></button>
+ 
+{% endblock dajrezultat %}

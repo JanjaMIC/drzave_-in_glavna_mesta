@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ugani glavno mesto</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body> 
+    
+
+
+      
+        <header >{% block header %}
+            <h1>Dragi Smart Ninja!</h1>
+            <p>Poglejmo, če ti gre geografija tako dobro kot programiranje! Ugani katero glavno mesto je prikazano na sliki! </p>
+         
+          {% endblock header %}
+        </header>
+
+    
+<form method="post" action="/rezultat">
+    <h3>Glavno mesto Slovenije je:{% block odgovor_slo %}
+       <input name="odgovor_slo"></h3><br>{% endblock odgovor_slo %}
+         <br>
+    
+<img class="SLO" src="http://finestayslovenia.com/wp-content/uploads/2015/01/ljubljana-old-town-three-bridges.jpg" style="float:center;width:400px;height:300px"><br>
+<hr>    
+
+    
+    <h3>Glavno mesto Italije je: {% block odgovor_it %}
+    <input name="odgovor_it"></h3> <br>{% endblock odgovor_it %}
+     <br>
+    <img class="IT" src="http://blog.edreams.it/wp-content/uploads/sites/7/2013/08/roma_110843582.jpg" style="float:center;width:400px;height:300px;"><br>
+    <hr>       
+
+    
+    
+    <h3>Glavno mesto Avstrije je: {% block odgovor_at %}
+    <input name="odgovor_at"></h3> {% endblock odgovor_at %}
+    <br>
+    <img class="AT" src="http://citymagazine.si/wp-content/uploads/2009/02/dunaj-1000x500.jpg" style="float:center;width:400px;height:300px;"><br>
+    <hr>
+    
+
+    
+    <h3>Glavno mesto Francije je: {% block odgovor_fr %}
+    <input name="odgovor_fr"> </h3><br>{% endblock odgovor_fr %}
+    <br>
+    <img class="FR" src="http://www.premiumtours.co.uk/images/product/original/67_1.jpg" style="float:center;width:400px;height:400px;"><br>
+    <hr>
+    
+    
+    <h3>Glavno mesto Srbije je:{% block odgovor_sr %}
+    <input name="odgovor_sr"></h3><br>{% endblock odgovor_sr %}
+    <br>
+    <img class="SR" src="http://www.onlycroatia.com/cities/124/8976.jpg" style="float:center;width:400px;height:300px;"><br>
+    <hr>
+    
+     <h3>Glavno mesto Španije je: {% block odgovor_sp %}
+    <input name="odgovor_sp"></h3><br>{% endblock odgovor_sp %}
+    <br>
+  
+    <img class="ES" src="http://www.wunderman.com/sites/default/files/asset/metro/heroes/OfficesDetail_Madrid_1200X657.jpg" style="float:center;width:400px;height:300px;"><br> 
+    <hr>       
+
+    
+ 
+    <br>
+    <br>
+    <br>
+  {% block dajrezultat %}  
+   <button class="btn btn-success" type="submit" name="submit">Moj rezultat</button>
+</form> 
+{% endblock dajrezultat %}   
+</body>
+</html>
+
+  
